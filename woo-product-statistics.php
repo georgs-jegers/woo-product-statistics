@@ -7,7 +7,8 @@ Author: GJ
 Text Domain: wc-product-stats
 */
 
-require 'plugin-update-checker/plugin-update-checker.php';
+require plugin_dir_path(__FILE__) . 'plugin-update-checker/plugin-update-checker.php';
+
 
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
