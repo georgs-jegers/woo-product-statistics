@@ -13,7 +13,7 @@ require plugin_dir_path(__FILE__) . 'plugin-update-checker/plugin-update-checker
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-    'https://github.com/georgs-jegers/woo-product-statistics',
+    'https://github.com/georgs-jegers/woo-product-statistics/',
     __FILE__,
     'woo-product-statistics'
 );
