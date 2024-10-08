@@ -2,7 +2,7 @@
 /*
 Plugin Name: WooCommerce Product Statistics by IP
 Description: Tracks product views and purchases uniquely by user IP in WooCommerce.
-Version: 1.4
+Version: 1.5
 Author: Georg Jegers
 Text Domain: wc-product-stats
 */
