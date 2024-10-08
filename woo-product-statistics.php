@@ -12,13 +12,13 @@ require 'plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-    'https://github.com/user-name/repo-name/',
+    'https://github.com/georgs-jegers/woo-product-statistics',
     __FILE__,
     'woo-product-statistics'
 );
 
 $myUpdateChecker->setBranch('master');
-$myUpdateChecker->setAuthentication('your-token-here');
+$myUpdateChecker->setAuthentication('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');
 
 
 if (!defined('ABSPATH')) {
@@ -236,15 +236,15 @@ class WC_Product_Stats
         if (get_option($this->fake_view_option) === false) {
             update_option($this->fake_view_option, $this->view_threshold);
         }
-/*************  ✨ Codeium Command ⭐  *************/
-    /**
-     * Returns an array with the total view and purchase count for a given product ID.
-     * If the product has less than the view/purchase threshold, fake data is used instead.
-     * If there is an error, the function logs the error and returns an array with zeros.
-     * @param int $product_id The product ID to retrieve statistics for.
-     * @return array An array with 'view_count' and 'purchase_count' keys.
-     */
-/******  e7c50aba-dbc3-41f9-99aa-eadd4edc32c5  *******/        if (get_option($this->fake_purchase_option) === false) {
+        /*************  ✨ Codeium Command ⭐  *************/
+        /**
+         * Returns an array with the total view and purchase count for a given product ID.
+         * If the product has less than the view/purchase threshold, fake data is used instead.
+         * If there is an error, the function logs the error and returns an array with zeros.
+         * @param int $product_id The product ID to retrieve statistics for.
+         * @return array An array with 'view_count' and 'purchase_count' keys.
+         */
+        /******  e7c50aba-dbc3-41f9-99aa-eadd4edc32c5  *******/        if (get_option($this->fake_purchase_option) === false) {
             update_option($this->fake_purchase_option, $this->purchase_threshold);
         }
     }
